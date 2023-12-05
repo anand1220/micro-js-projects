@@ -1,36 +1,49 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
     height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.pexels.com/photos/2842734/pexels-photo-2842734.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: azure;
+    padding: 20px 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-button {
+.btn {
     margin-top: 10px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+    /* border: none; */
+    padding: 5px;
+}
+
+.add-task {
+    background-color: blueviolet;
+    color: white;
+}
+
+.list-container {
+    list-style-type: none;
+}
+
+.list-container li {
+    font-size: 1.3rem;
+    margin-top: 7px;
+    color: goldenrod;
+}
+
+.remove-btn {
+    float: right;
+    margin-top: 7px;
 }
