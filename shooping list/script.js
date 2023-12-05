@@ -1,31 +1,38 @@
-// Function to add an item to the shopping list
-function addItem() {
-    const itemInput = document.getElementById('itemInput');
-    const itemName = itemInput.value.trim();
+const addBtn = document.querySelector('.add-btn');
+let inputValue = document.querySelector('#input-value');
 
-    if (itemName !== '') {
-        const shoppingList = document.getElementById('shoppingList');
-        const listItem = document.createElement('li');
 
-        // Create span element for item name
-        const itemNameSpan = document.createElement('span');
-        itemNameSpan.textContent = itemName;
+addBtn.addEventListener('click', addliItems)
 
-        // Create button for removing item
-        const removeButton = document.createElement('button');
-        removeButton.textContent = 'Remove';
-        removeButton.addEventListener('click', function () {
-            listItem.remove();
-        });
 
-        // Append elements to list item
-        listItem.appendChild(itemNameSpan);
-        listItem.appendChild(removeButton);
+function addliItems() {
 
-        // Append list item to shopping list
-        shoppingList.appendChild(listItem);
+    let inputItem = inputValue.value;
+    let ul = document.querySelector('.list-container')
+    if (inputValue !== '') {
 
-        // Clear the input field
-        itemInput.value = '';
+
+        const newli = document.createElement('li');
+
+        newli.textContent = inputItem;
+        // newli.appendChild(span)
+        ul.appendChild(newli)
+
+
+        let removebtn = document.createElement('button')
+        removebtn.textContent = 'Remove'
+        newli.appendChild(removebtn)
+
+        removebtn.addEventListener('click', function () {
+            newli.remove()
+
+        })
+        inputValue.value = '';
     }
 }
+
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 13 && (inputValue.value !== '')) {
+        addliItems()
+    }
+})
