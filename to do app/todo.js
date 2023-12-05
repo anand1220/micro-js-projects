@@ -11,7 +11,6 @@ addTask.addEventListener('click', () => {
         let removeButton = document.createElement('button');
         removeButton.innerText = 'Remove';
         removeButton.className = 'remove-btn'
-        removeButton.className = 'remove-li'
 
         removeButton.addEventListener('click', () => {
             li.remove();

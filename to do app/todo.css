@@ -37,17 +37,18 @@ body {
     list-style-type: none;
 }
 
-.list-container li {
+ul li {
     font-size: 1.1rem;
     color: goldenrod;
+
 }
 
-.remove-li {
+.remove-btn {
     float: right;
 
 }
 
-.remove-li,
-.list-container li {
-    margin-top: 7px;
+ul li,
+.remove-btn {
+    margin-top: 5px;
 }
