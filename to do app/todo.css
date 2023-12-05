@@ -50,16 +50,13 @@ ul li {
     font-size: 1.2rem;
     color: black;
     font-weight: 600;
+    margin-top: 7px;
 
 }
 
 .remove-btn {
     float: right;
     cursor: pointer;
+    margin-top: 4px;
 
-}
-
-ul li,
-.remove-btn {
-    margin-top: 5px;
 }
