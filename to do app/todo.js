@@ -9,6 +9,7 @@ addTask.addEventListener('click', () => {
         let li = document.createElement('li');
         li.innerText = inputValue;
         let removeButton = document.createElement('button');
+
         removeButton.innerText = 'Remove';
         removeButton.className = 'remove-btn'
 
