@@ -38,12 +38,16 @@ body {
 }
 
 .list-container li {
-    font-size: 1.3rem;
-    margin-top: 7px;
+    font-size: 1.1rem;
     color: goldenrod;
 }
 
-.remove-btn {
+.remove-li {
     float: right;
+
+}
+
+.remove-li,
+.list-container li {
     margin-top: 7px;
 }
