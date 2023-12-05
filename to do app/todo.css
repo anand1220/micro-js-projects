@@ -100,7 +100,7 @@ ul li {
     justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .main {
         flex-direction: column;
         align-items: center;
