@@ -38,6 +38,11 @@ body {
     font-weight: 500;
 }
 
+.todo {
+    margin-left: -50px;
+    /* flex: 1; */
+}
+
 .container {
     background-color: azure;
     padding: 20px 30px;
